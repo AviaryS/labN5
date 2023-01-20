@@ -44,14 +44,6 @@ const Tasks = () => {
         }
     };
 
-    const taskCompleted = () => {
-        setTasks(
-            tasks.map((task) =>
-                task.id === taskId ? { ...task, completed: !task.completed } : task
-            )
-        );
-    }
-
     return (
         <div className="row">
             <div className="task__form">
@@ -73,8 +65,6 @@ const Tasks = () => {
                         <div className="task">
                             <input
                                 type="checkbox"
-                                checked={task.completed}
-                                onChange={() => taskCompleted(task.id)}
                             />
                             <p>{task.name}</p>
                             <button onClick={() => editTask(task)} className="task__edit">

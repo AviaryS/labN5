@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.row {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  width: 300px;
+  gap: 5px;
+}
+
+.task__edit {
+  height: 50%;
+  align-self: center;
+}
+
+.task__delete {
+  height: 50%;
+  align-self: center;
+}
+
+.task__form {
+  display: flex;
+}
+
+.input {
+  padding: 10px 0px 10px 20px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  background: #f1f1f1;
+  border-radius: 20px 0 0 20px;
+  width: 200px;
+}
+
+.button {
+  float: left;
+  width: 100px;
+  padding: 10px;
+  background: gray;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.task__edit {
+  width: 100px;
+  padding: 10px;
+  background: gray;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.task__delete {
+  width: 100px;
+  padding: 10px;
+  background: gray;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
